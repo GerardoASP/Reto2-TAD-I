@@ -4,6 +4,13 @@ const capturaValorInputAnonima = function() {
     /* Dividir o separar cada valor por "," split() */
 };
 
+function crearListaResultante(){
+    instClass2 = new listasSimples();
+    let valoresNodos = document.getElementById("nodos").value;
+    instClass2.añadirNodoF(valoresNodos);
+    console.log(instClass2.imprimirArrayList());
+    //instClass2.imprimirArrayList();
+}
 function cargueImagenes(eventoSeleccionar) {
     let files = eventoSeleccionar.target.files;
     for (let i = 0, f; f = files[i]; i++) {
@@ -218,14 +225,15 @@ class listasSimples {
     }
 }
 let instClass = new listasSimples();
-instClass.añadirNodoF(5);
+/* instClass.añadirNodoF(5);
 instClass.añadirNodoI(4);
 instClass.añadirNodoI(3);
 instClass.añadirNodoI(2);
 instClass.añadirNodoI(1);
 instClass.añadirNodoI(7);
 instClass.añadirNodoI(8);
-instClass.añadirNodoI(9);
+instClass.añadirNodoI(9); */
+
 /* Añadir nodo al final de los valores ingresados en el campo input plit(",")
     Añadir nodo al final que contenga el nombre de las imagenes seleccionadas
     Añadir nodo al final que muestre el contenido del archivo txt seleccionado, donde cada linea 
@@ -234,6 +242,9 @@ instClass.añadirNodoI(9);
 instClass.imprimirArrayList();
 
 /* validar el algoritmo de selección de lista desplegable y checkbox */
+function showSelectd(){
+    
+}
 let seleccion = document.getElementById("functionSelected").value;
 
 if (seleccion === "1") {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
+    <title>Reto 2</title>
 </head>
 
 <body>
@@ -24,15 +24,7 @@
             </thead>
             <!-- Registros de la tabla -->
             <tbody>
-                <!-- fila 1: Muestra info de un sólo registro -->
-                <tr>
-                    <td>
-                        <label>Cargar valores por defecto</label>
-                    </td>
-                    <td>
-                        <output id="listaPorDefault"></output>
-                    </td>
-                </tr>
+                
                 <!-- fila 2: Solicitar valores ingresados por el usuario -->
                 <tr>
                     <td>
@@ -94,11 +86,19 @@
         <div class="section">
             <div class="row center">
                 <div class="col s12">
-                    <button class="btn waves-effect waves-lght btn-large blue">Crear lista</button>
+                    <button class="btn waves-effect waves-lght btn-large blue" onclick="crearListaResultante()">Crear lista</button>
                 </div>
             </div>
         </div>
+        <!-- Lista resultante versión 1 -->
+        <div class="section">
+            <div class="row center">
+                <label>Lista: </label>
+                <output id="listaPorDefault"></output>
+            </div>
+        </div>
 
+        
         <!-- Sección que muestra la lista -->
         <div class="section">
             <div class="row center">
